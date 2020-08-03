@@ -33,6 +33,9 @@ body {
     font-family: 'Gloria Hallelujah', cursive;
     font-size: 60px;
 }
+#spantext {
+    color: yellow;
+}
 .pizz {
     color: lawngreen;
 }
@@ -63,4 +66,14 @@ body {
     height: inherit;
     width: inherit;
     background-color: rgba(0, 0, 0, 0.7);
+}
+.karibu-img {
+    margin-top: 10px;
+    margin-left: 80px;
+    margin-bottom: 130px;
+    height: 400px;
+    width: 400px;
+}
+.welcome {
+    padding-top: 30px;
 }
