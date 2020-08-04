@@ -1,0 +1,206 @@
+.bg-navy {
+    background: linear-gradient(-60deg, #041d8b8c, #bb8b0952,#580318b6);
+}
+.min-vh-80 {
+    min-height: 80vh;
+}
+body{
+    background-image: url(https://files.123freevectors.com/wp-content/original/147080-orange-and-white-blur-lights-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h2,h1{
+    font-family:'love ya like a sister', cursive;
+}
+.landing {
+    background: url("../images/landingpage.gif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.landing-text {
+    margin-top: 10%;
+}
+
+.landing-text h1, h2 {
+    font-family: 'Love Ya Like A Sister', cursive;
+}
+
+.landing-text h1 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 60px;
+}
+#push {
+    padding-top: 10%;
+}
+.welcome{
+    padding-top:30px;
+}
+.karibu-img {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    height: 500px;
+    width: 400px;
+}
+.karibu-txt {
+    margin-top: 160px;
+}
+.pizz {
+    color: lawngreen;
+}
+.exc {
+    color: yellow;
+}
+#spantext {
+    color: yellow;
+}
+#menu {
+    font-family: 'Love Ya Like A Sister', cursive;  padding-top: 20px;
+    padding-top: 20px;
+}
+
+.menu-overlay {
+    background-image: url("../images/b4.jpg");
+    height: inherit;
+    width: inherit;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+div#smallpizza img{
+    max-width: 80px;
+}
+div#mediumpizza img{
+    max-width: 90px;
+}
+div#largepizza img{
+    max-width: 100px;
+}
+#piz-pap {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 35px;
+    font-weight: normal;
+    color: darkorange;
+}
+#toppings div img {
+    max-width: 120px;
+    margin: auto;
+}
+
+#toppings div {
+    transition: .3s;
+}
+#toppings div:hover {
+    transition: .2s;
+    margin: -1% 0 1% 0;
+    background: rgba(255, 255, 255, 1);
+}
+.basket {
+    position: fixed;
+    top: 10%; right: 10px;
+    padding: 2px; border-radius: 50%;
+    width: 40px;
+    z-index: 1001;
+    animation: bounce 1s;
+    animation-iteration-count: infinite;
+    -webkit-animation: bounce 1s;
+    -webkit-animation-iteration-count: infinite;
+}
+.basket img {
+    width:100%
+}
+#orderform{
+    padding: 200px;
+}
+.outer-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.choice.active {
+    display: flex;
+}
+.choice {
+    display: none;
+}
+@keyframes bounce{
+    0%, 100% {
+        margin: -1% 0 0 0;
+    }
+    50% {
+        margin: 0 0 0 0;
+    }
+}
+@-webkit-keyframes bounce {
+    0%, 100% {
+        margin: -1% 0 0 0;
+    }
+    50% {
+        margin: 0 0 0 0;
+    }
+}media (max-width: 740px) {
+    html,
+    body,
+    header,
+    .view {
+        height: 1000px;
+        overflow-x: hidden;
+    }
+
+    #push {
+        padding-top: 40%;
+    }
+
+    .karibu-txt {
+        margin-top: 50px;
+    }
+
+    .menu-overlay {
+        width: 100%;
+        height: inherit;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .karibu-img {
+        margin-left: 20px;
+        margin-bottom: 10px;
+        height: 300px;
+        width: 270px;
+    }
+
+    .welcome {
+        padding-top: 10px;
+    }
+
+    .cdata {
+        padding: 10px 5px 10px 5px;
+    }
+
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+    html,
+    body,
+    header,
+    .view {
+        height: 650px;
+    }
+
+    .piz-pap {
+        font-size: 50px;
+    }
+
+    ul > .nav-items {
+        display: inline;
+        margin-right: 20px;
+        margin-left: 12px;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #b5a93f !important;
+    }
+
+}

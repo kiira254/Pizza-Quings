@@ -1,229 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza Quings</title>
-    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <!-- Wicked css -->
     <link rel="stylesheet" href="css/wickedcss.min.css">
-    <!-- Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="css/font-awesome.css">
-    <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
-    <!--Custom js file -->
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <script src="static/js/jquery-3.4.1.js"></script>
+    <script src="static/js/bootstrap.js"></script>
+    <script src="static/js/script1.js"></script>
     <script src="static/js/script.js"></script>
-    <script src="static/js/scripts.js"></script>
+    <title>Pizza Quings</title>
 </head>
-    <body>
-        <div class="body">
-            <!--Start Navigation //-->
-                <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-                    <h1 id="delica pizza" class="pi">Pi<span id="spantext">zz</span>a Quings!</h1>
-                    <div class="navi">
-                        <ul class="nav-items">
-                            <li><a href="#menus">Menu</a></li>
-                            <li><a href="#order">Orders</a></li>
-                            <li><a href="#contact">Contacts</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            <!--End Navigation-->
-            <!--Start Landing-->
-                <div class="landing">
-                    <div class="overlay">
-                        <div id="push"></div>
-                        <div class="landing-text">
-                            <h1 class="text-white text-center"><span class="pizz">Pizza</span><span class="exc">Quings</span></h1>
-                            <h2 class="text-purple text-center">Get your pizza in an instant.</h2>
-                        </div>
-                        <div class="h-buttons text-center">
-                            <a href="#welcome">
-                                <button class="btn bg-info floater  infinite delay-2s">Go</button>
-                            </a>
 
-                        </div>
-                    </div>
+<body>
+    <div>
+        <div class="container-fluid min-vh-100 landing">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-navy border-bottom">
+                <a href="#" class="navbar-brand"><h1 id="piz-pap" class="">Pi<span id="spantext">zz</span>a Quings!</h1></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynav"
+                    aria-controls="mynav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">PLACE ORDER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">CONTACT US</a>
+                        </li>
+                    </ul>
                 </div>
-            <!--End Landing-->
-            <!--Welcome Section-->
-                <div class="welcome" id="welcome">
-                    <br><br><br><br>
-                    <div class="col-sm-12">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <img src="images/anime.jpg" alt="chef-cartoon" class="karibu-img">
-                            </div>
-                            <div class="col-md-4 karibu-txt">
-                                <h1 class="text-center txt txt-big">Karibu <span class="pizz">Pizza </span><span class="exc">Quings!</span>
-                                </h1>
-                                <p class="text-center txt">The best pizza you'll ever taste</p>
-                                <p class="text-center txt">Order your pizza and we will deliver it to your location.</p>
-                                <a href="#menus">
-                                    <button class="btn bg-info mx-auto d-block menu-btn">Menu</button>
-                                </a>
-                            </div>
-                            <div class="col-sm-4">
-                                <img src="images/sponchbob.gif" alt="chef-cartoon" class="karibu-img">
-                            </div>
+            </nav>
+
+            <div class="row justify-content-center text-center flex-column text-black min-vh-100 align-items-center p-4">
+            <div class="overlay">
+                <div id="push">          
+                        <div class="landing-text">
+                            <h1 class="text-white text-center"><span class="pizz">Pizza </span><span class="exc">Quings!</span></h1>
+                            <h2 class="text-white text-center">Get your pizza in an instant.</h2>
                         </div>
-                    </div>
+                        <button class="btn btn-outline-success p-2 m-2" onclick="window.location.href='#eertert'">
+                            Place Order
+                        </button>
                 </div>
-            <!--Start Content-->
-            <div id="menus"></div>
-            <br>
-            <div class="menu col-md-12">
-                <div class="menu-overlay">
-                    <h1 class="text-center text-white" id="menu">Menu</h1>
-                    <div class="pizza-menu row text-center">
-                        <figure class="col-sm-4">
-                            <img src="images/2.png" alt="small-pizza" class="wiggle">
-                            <figcaption class="text-white">Regular<br>Ksh. 300</figcaption>
-                        </figure>
-                        <figure class="col-sm-4">
-                            <img src="images/1.png" alt="medium-pizza" class="wiggle">
-                            <figcaption class="text-white">Medium<br>Ksh. 600</figcaption>
-                        </figure>
-                        <figure class="col-sm-4">
-                            <img src="images/3.png" alt="large-pizza" class="wiggle">
-                            <figcaption class="text-white">Large<br>Ksh. 1200</figcaption>
-                        </figure>
+            </div>
+            </div>
+        </div>
+        <div class="welcome" id="welcome">
+            <br><br><br><br>
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="static/images/anime.jpg" alt="chef-cartoon" class="karibu-img">
+                    </div>
+                    <div class="col-md-4 karibu-txt">
+                        <h1 class="text-center txt txt-big">Karibu <span class="pizz">Pizza </span><span class="exc">Quings!</span>
+                        </h1>
+                        <p class="text-center txt">The best pizza you'll ever taste</p>
+                        <p class="text-center txt">Order your pizza and we wil deliver it to your location.</p>
+                        <a href="#menus">
+                            <button class="btn bg-info mx-auto d-block menu-btn">Menu</button>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="static/images/sponchbob.gif" alt="chef-cartoon" class="karibu-img">
                     </div>
                 </div>
             </div>
-            <div class="container min-vh-80" id="eertert">
-                <form class="form-horizontal text-center flex-column align-items-center" id="orderform">
-                    <h2>Order Your Pizza!</h2>
-                    <div class="outer-cont">
-                        <div class="row choice justify-content-center active" id="pizzasize">
-                            <h2 class="col-sm-12">Choose a pinch</h2>
-                            <div class="col-sm col-md-4 border" id="smallpizza">
-                                <img src="images/pizza.png" alt="">
-                                <p id="sm">Small</p>
-                            </div>
-                            <div class="col-sm col-md-4 border" id="mediumpizza">
-                                <img src="images/pizza.png" alt="">
-                                <p id="md">Medium</p>
-                            </div>
-                            <div class="col-sm col-md-4 border" id="largepizza">
-                                <img src="images/pizza.png" alt="">
-                                <p id="lg">Large</p>
-                            </div>
-                            <input type="text" class="form-control" name="pizzasizeinput" hidden>
-                        </div>
-        
-                        <div class="row choice justify-content-center" id="pizzacrust">
-                            <h2 class="col-sm-12">Which Crust?</h2>
-                            <div class="col-sm-4 border p-5" id="cripsy">
-                                Cripsy
-                            </div>
-                            <div class="col-sm-4 border p-5" id="stuffed">
-                                Stuffed
-                            </div>
-                            <div class="col-sm-4 border p-5" id="gluttenFree">
-                                Glutten Free
-                            </div>
-                            <input type="text" class="form-control" name="pizzacrustinput" hidden>
-                        </div>
-        
-                        <div class="row choice justify-content-center" id="toppings">
-                            <h2 class="col-sm-12">Which Toppings?</h2>
-                            <div class="col-sm-4 col-md-3 border" id="bacon">
-                                <img src="images/toppings/bacon.png" alt="">
-                                <p>Bacon</p>
-                            </div>
-                            <div class="col-sm-4 col-md-3 border" id="blackOlives">
-                                <img src="images/toppings/black_olives.png" alt="">
-                                <p>Black Olives</p>
-                            </div>
-                            <div class="col-sm-4 col-md-3 border" id="extraCheese">
-                                <img src="images/toppings/extra_cheese.png" alt="">
-                                <p>Extra Cheese</p>
-                            </div>
-                            <div class="col-sm-4 col-md-3 border" id="hamPineapple">
-                                <img src="images/toppings/ham&pineapple.png" alt="">
-                                <p>Ham & Pineapple</p>
-                            </div>
-                            <div class="col-sm-4 col-md-3 border" id="mushroom">
-                                <img src="images/toppings/mushroom.png" alt="">
-                                <p>Mushroom</p>
-                            </div>
-                            <div class="col-sm-4 col-md-3 border" id="onions">
-                                <img src="images/toppings/onions.png" alt="">
-                                <p>Onions</p>
-                            </div>
-                            <div class="col-sm-4 col-md-3 border" id="pepper">
-                                <img src="images/toppings/pepper.png" alt="">
-                                <p>Pepper</p>
-                            </div>
-                            <div class="col-sm-4 col-md-3 border" id="sausage">
-                                <img src="images/toppings/sausage.png" alt="">
-                                <p>Sausage</p>
-                            </div>
-                            <div class="col-sm-4 col-md-3 border" id="spinach">
-                                <img src="images/toppings/spinach.png" alt="">
-                                <p>Spinach</p>
-                            </div>
-                            <input type="text" name="pizzatoppinginput" hidden>
-                        </div>
-        
-                        <div class="row choice justify-content-center" id="number-delivery">
-                            <h3 class="col-sm-12">How Many?</h3>
-                            <div class="col-sm-6 form-group">
-                                <label for="number">Enter a Number</label>
-                                <input type="number" min="1" class="form-control" name="noOfPizzas"
-                                    placeholder="Number of pizzas">
-                            </div>
-                            <h3 class="col-sm-12">Do You Want It Delivered?</h3>
-                                <div class="form-group">
-                                    <label class="border border-warning p-2 rounded">
-                                        <input type="radio" value="yes" name="delivery" id="yes">Yes
-                                        <input type="text" name="uname" class="form-control m-1" placeholder="Your Name">
-                                        <input type="text" name="pbox" class="form-control m-1" placeholder="Your P.O. Box">
-                                        <input type="text" name="ptown" class="form-control m-1" placeholder="Postal Town">
-                                    </label><br>
-                                    <label>
-                                        <input type="radio" value="no" name="delivery" id="no"> No
-                                    </label>
-                                </div>
-                                <input type="text" id="delivery" name="delivery" hidden>
-                        </div>
-        
-                        <div class="row choice justify-content-center" id="checkout">
-                            <h3 class="col-sm-12">CheckOut!</h3>
-                            <h4 class="col-sm-12">Your Items</h4>
-                            <ol id="items" class="text-left">
-        
-                            </ol>
-                        </div>
-        
-                        <div class="row choice justify-content-center">
-                            <h1 class="col-sm-12" id="total">Make Payment Of: <span id="totalscreen"></span></h1>
-                            <button class="btn btn-success" id="confirm">Confirm Purchase</button>
-                        </div>
-        
-                    </div>
-        
-        
-        
-        
-        
-                    <div class="form-group nextprev text-center m-2">
-                        <input type="button" value="Previous" class="btn btn-outline-danger" id="previous">
-                        <input type="button" value="Proceed" class="btn btn-outline-success" id="proceed">
-                    </div>
+        </div>
+        <div id="menus"></div>
+    <br>
+    <div class="menu col-md-12">
+        <div class="menu-overlay">
+            <h1 class="text-center text-white" id="menu">Menu</h1>
+            <div class="pizza-menu row text-center">
+                <figure class="col-sm-4">
+                    <img src="static/images/2.png" alt="small-pizza" class="wiggle">
+                    <figcaption class="text-white">Regular<br>Ksh. 300</figcaption>
+                </figure>
+                <figure class="col-sm-4">
+                    <img src="static/images/1.png" alt="medium-pizza" class="wiggle">
+                    <figcaption class="text-white">Medium<br>Ksh. 600</figcaption>
+                </figure>
+                <figure class="col-sm-4">
+                    <img src="static/images/3.png" alt="large-pizza" class="wiggle">
+                    <figcaption class="text-white">Large<br>Ksh. 1200</figcaption>
+                </figure>
             </div>
-            </form>
+        </div>
+    </div>
+        <div class="container min-vh-80" id="eertert">
+            <form class="form-horizontal text-center flex-column align-items-center" id="orderform">
+                <h2>Order Your Pizza!</h2>
+                <div class="outer-cont">
+                    <div class="row choice justify-content-center active" id="pizzasize">
+                        <h2 class="col-sm-12">Choose a pinch</h2>
+                        <div class="col-sm col-md-4 border" id="smallpizza">
+                            <img src="static/images/toppings/pepper.png" alt="">
+                            <p id="sm">Small</p>
+                        </div>
+                        <div class="col-sm col-md-4 border" id="mediumpizza">
+                            <img src="static/images/toppings/pepper.png" alt="">
+                            <p id="md">Medium</p>
+                        </div>
+                        <div class="col-sm col-md-4 border" id="largepizza">
+                            <img src="static/images/toppings/pepper.png" alt="">
+                            <p id="lg">Large</p>
+                        </div>
+                        <input type="text" class="form-control" name="pizzasizeinput" hidden>
+                    </div>
+
+                    <div class="row choice justify-content-center" id="pizzacrust">
+                        <h3 class="col-sm-12">Which Crust?</h3>
+                        <div class="col-sm-4 border p-5" id="cripsy">
+                            Cripsy
+                        </div>
+                        <div class="col-sm-4 border p-5" id="stuffed">
+                            Stuffed
+                        </div>
+                        <div class="col-sm-4 border p-5" id="gluttenFree">
+                            Glutten Free
+                        </div>
+                        <input type="text" class="form-control" name="pizzacrustinput" hidden>
+                    </div>
+
+                    <div class="row choice justify-content-center" id="toppings">
+                        <h3 class="col-sm-12">Which Toppings?</h3>
+                        <div class="col-sm-4 col-md-3 border" id="bacon">
+                            <img src="static/images/toppings/bacon.png" alt="">
+                            <p>Bacon</p>
+                        </div>
+                        <div class="col-sm-4 col-md-3 border" id="blackOlives">
+                            <img src="static/images/toppings/black_olives.png" alt="">
+                            <p>Black Olives</p>
+                        </div>
+                        <div class="col-sm-4 col-md-3 border" id="extraCheese">
+                            <img src="static/images/toppings/extra_cheese.png" alt="">
+                            <p>Extra Cheese</p>
+                        </div>
+                        <div class="col-sm-4 col-md-3 border" id="hamPineapple">
+                            <img src="static/images/toppings/ham&pineapple.png" alt="">
+                            <p>Ham & Pineapple</p>
+                        </div>
+                        <div class="col-sm-4 col-md-3 border" id="mushroom">
+                            <img src="static/images/toppings/mushroom.png" alt="">
+                            <p>Mushroom</p>
+                        </div>
+                        <div class="col-sm-4 col-md-3 border" id="onions">
+                            <img src="static/images/toppings/onions.png" alt="">
+                            <p>Onions</p>
+                        </div>
+                        <div class="col-sm-4 col-md-3 border" id="pepper">
+                            <img src="static/images/toppings/pepper.png" alt="">
+                            <p>Pepper</p>
+                        </div>
+                        <div class="col-sm-4 col-md-3 border" id="sausage">
+                            <img src="static/images/toppings/sausage.png" alt="">
+                            <p>Sausage</p>
+                        </div>
+                        <div class="col-sm-4 col-md-3 border" id="spinach">
+                            <img src="static/images/toppings/spinach.png" alt="">
+                            <p>Spinach</p>
+                        </div>
+                        <input type="text" name="pizzatoppinginput" hidden>
+                    </div>
+
+                    <div class="row choice justify-content-center" id="number-delivery">
+                        <h3 class="col-sm-12">How Many?</h3>
+                        <div class="col-sm-6 form-group">
+                            <label for="number">Enter a Number</label>
+                            <input type="number" min="1" class="form-control" name="noOfPizzas"
+                                placeholder="Number of pizzas">
+                        </div>
+                        <h3 class="col-sm-12">Do You Want It Delivered?</h3>
+                        <div class="form-group">
+                            <label class="border border-warning p-2 rounded">
+                                <input type="radio" value="yes" name="delivery" id="yes">Yes
+                                <input type="text" name="uname" class="form-control m-1" placeholder="Your Name">        
+                                <input type="text" name="pbox" class="form-control m-1" placeholder="Your P.O. Box">
+                                <input type="text" name="ptown" class="form-control m-1" placeholder="Postal Town">
+                            </label><br>
+                            <label>
+                                <input type="radio" value="no" name="delivery" id="no"> No
+                            </label>
+                        /div>
+                        <input type="text" id="delivery" name="delivery" hidden>
+                    </div>
+                    <div class="row choice justify-content-center" id="checkout">
+                        <h3 class="col-sm-12">CheckOut!</h3>
+                        <h4 class="col-sm-12">Your Items</h4>
+                        <ol id="items" class="text-left">
+                        </ol>
+                    </div>
+                    <div class="row choice justify-content-center">
+                        <h1 class="col-sm-12" id="total">Make Payment Of: <span id="totalscreen"></span></h1>
+                        <button class="btn btn-success" id="confirm">Confirm Purchase</button>
+                    </div>
+                </div>
+                <div class="form-group nextprev text-center m-2">
+                    <input type="button" value="Previous" class="btn btn-outline-danger" id="previous">
+                    <input type="button" value="Proceed" class="btn btn-outline-success" id="proceed">
+                </div>
             </div>
-    </body>
-    <script src="js/jquery.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/scrollify.js"></script>
+        </form>
+    </div>
+</body>
+
 </html>
